@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    color: #10979b;
+
+}
+
+h2 {
+    color: #10979b;
+    font-family: "Teko", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr {
+    border: dotted #8ed4d2 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+/* heros section */
+#heros {
+    color: #10979b;
+    background-color: #7bf6fa;
+    font-family: "Kaushan Script", cursive;
+    position: relative;
+}
+
+#heros .title-head {
+    position: relative;
+    z-index: 3;
+}
+
+.plane {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 400px;
+}
+
+.cloud1 {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 300px;
+}
+
+.cloud2 {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    z-index: 2;
+}
+
+.cloud3 {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    z-index: 1;
+}
+
+#lighthouse {
+    z-index: 2;
+    position: relative;
+    z-index: 1;
+}
+
+.ship {
+    display: block;
+    position: absolute;
+    bottom: 300px;
+    right: 60px;
+}
+
+.boat {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    z-index: 2;
+}
+
+/* about section */
+#about {
+    margin-top: 100px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+}
+
+.intro {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+/* skills-section */
+.skill-card {
+    font-size: 1.2rem;
+    margin: 0 auto 20px auto;
+    width: 50%;
+    display: grid;
+    grid-template: repeat(3, minmax(100px, auto))/ 1fr 1fr;
+    row-gap: 70px;
+    column-gap: 40px;
+}
+
+.skill-card .abt-title {
+    color: #10979b;
+}
+
+/* contact section */
+#contact {
+    margin-bottom: 100px;
+}
+
+.contact-container {
+    width: 40%;
+    margin: 0 auto 0 auto;
+}
+
+#contact .resume-btn {
+    text-decoration: none;
+    font-family: "Teko", sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 400;
+    display: block;
+    width: 200px;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #10979b;
+    margin: 0 auto;
+
+}
+
+#contact .resume-btn:hover {
+    background-color: white;
+    color: #10979b;
+    border: 1px solid #10979b;
+}
+
+/* footer section */
+#footer {
+    background-color: #10979b;
+    font-family: sans-serif;
+}
+
+@media(max-width: 1024px) {
+    html {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /* heros section */
+    #heros h1 {
+        font-size: 3.5rem;
+    }
+
+    #heros h2 {
+        font-size: 1.8rem;
+    }
+
+    .ship {
+        bottom: 150px;
+        right: 100px;
+    }
+
+
+    /* skill-section */
+    .skill-card {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    .skill-card>div,
+    .skill-card>p {
+        text-align: left !important;
+    }
+
+    .skill-card>#bruce {
+        order: 1
+    }
+
+    .skill-card>.abt-dev {
+        order: 2;
+    }
+
+    .skill-card>#simpson {
+        order: 3;
+        margin-top: 50px;
+    }
+
+    .skill-card>.abt-cooking {
+        order: 4;
+    }
+
+    .skill-card>#patrick-bateman {
+        order: 5;
+        margin-top: 50px;
+    }
+
+    .skill-card>.abt-music {
+        order: 6;
+    }
+
+    /* about section */
+    .intro {
+        width: 70%;
+        font-size: 1.6rem;
+    }
+
+    /* contact section */
+    #contact {}
+
+    .contact-container {
+        width: 70%;
+    }
+
+}
