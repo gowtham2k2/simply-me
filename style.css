@@ -154,7 +154,42 @@ hr {
 /* footer section */
 #footer {
     background-color: #10979b;
-    font-family: sans-serif;
+    font-family: serif;
+    padding: 50px 0 50px 0;
+}
+
+#footer p {
+    font-size: 0.8rem;
+    color: #eaf6f6;
+    margin: 0;
+}
+
+#footer .footer-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#footer .font-icons {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 70%;
+    min-width: 20%;
+    gap: 20px;
+}
+
+#footer .font-icons>a {
+    color: #44bdc2;
+    text-decoration: none;
+}
+
+#footer .font-icons>a:hover {
+    color: #00fbff;
 }
 
 @media(max-width: 1024px) {
